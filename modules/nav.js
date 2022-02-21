@@ -6,7 +6,7 @@ const listSection = document.getElementById('listSection');
 const contactSection = document.getElementById('contactSection');
 const home = document.getElementById('homePage');
 
-function listShow() {
+const listShow = () => {
   addSection.style.display = 'none';
   listSection.style.display = 'block';
   contactSection.style.display = 'none';
@@ -14,9 +14,9 @@ function listShow() {
   addNew.style.color = 'black';
   contact.style.color = 'black';
   list.style.color = 'rgb(59, 59, 190)';
-}
+};
 
-function addShow() {
+const addShow = () => {
   addSection.style.display = 'flex';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
@@ -24,9 +24,9 @@ function addShow() {
   list.style.color = 'black';
   contact.style.color = 'black';
   addNew.style.color = 'rgb(59, 59, 190)';
-}
+};
 
-function contactShow() {
+const contactShow = () => {
   addSection.style.display = 'none';
   listSection.style.display = 'none';
   contactSection.style.display = 'flex';
@@ -34,16 +34,16 @@ function contactShow() {
   list.style.color = 'black';
   addNew.style.color = 'black';
   contact.style.color = 'rgb(59, 59, 190)';
-}
+};
 
-function homePage() {
+const homePage = () => {
   addSection.style.display = 'none';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
   home.style.display = 'block';
   list.style.color = 'black';
   addNew.style.color = 'black';
-}
+};
 
 export {
   listShow, addShow, contactShow, homePage,
