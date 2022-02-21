@@ -1,0 +1,22 @@
+{
+  "name": "awesomebooks-es6",
+  "version": "1.0.0",
+  "description": "a booklist with ability to add, remove and show books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZahraArshia/AwesomeBooks-ES6.git"
+  },
+  "author": "Zahra Arshia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZahraArshia/AwesomeBooks-ES6/issues"
+  },
+  "homepage": "https://github.com/ZahraArshia/AwesomeBooks-ES6#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
