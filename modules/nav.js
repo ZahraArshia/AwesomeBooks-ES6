@@ -1,18 +1,12 @@
-export {
-  listShow, addShow, contactShow, homePage,
-};
-// export const list, addNew, contact, logo;
-
 const list = document.getElementById('list');
 const addNew = document.getElementById('addNew');
 const contact = document.getElementById('contact');
-// const logo = document.getElementById('logo');
 const addSection = document.getElementById('addSection');
 const listSection = document.getElementById('listSection');
 const contactSection = document.getElementById('contactSection');
 const home = document.getElementById('homePage');
 
-function listShow(){
+function listShow() {
   addSection.style.display = 'none';
   listSection.style.display = 'block';
   contactSection.style.display = 'none';
@@ -22,7 +16,7 @@ function listShow(){
   list.style.color = 'rgb(59, 59, 190)';
 }
 
-function addShow(){
+function addShow() {
   addSection.style.display = 'flex';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
@@ -32,7 +26,7 @@ function addShow(){
   addNew.style.color = 'rgb(59, 59, 190)';
 }
 
-function contactShow(){
+function contactShow() {
   addSection.style.display = 'none';
   listSection.style.display = 'none';
   contactSection.style.display = 'flex';
@@ -50,3 +44,7 @@ function homePage() {
   list.style.color = 'black';
   addNew.style.color = 'black';
 }
+
+export {
+  listShow, addShow, contactShow, homePage,
+};
