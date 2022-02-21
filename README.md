@@ -14,8 +14,6 @@ here is a view of this webpage :
 ## Live Demo
 [GitHub page Link](https://zahraarshia.github.io/AwesomeBooks-ES6/)
 
-[Live Demo Link](https://raw.githack.com/ZahraArshia/Awesome-books/main/index.html)
-
 ## Author
 👤 **Zahra**
 
