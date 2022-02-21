@@ -1,8 +1,8 @@
-import addDate from './modules/time';
-import * as nav from './modules/nav';
-import Book from './modules/bookOperations';
 
-setInterval(addDate, 1000);
+import Book from './modules/bookOperations.js';
+import * as nav from './modules/nav.js';
+// import addDate from './modules/addDate';
+import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 
 document.getElementById('list').addEventListener('click', nav.listShow);
 document.getElementById('addNew').addEventListener('click', nav.addShow);
@@ -16,3 +16,13 @@ document.getElementById('addButton').addEventListener('click', () => {
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
+
+const addDate = () => {
+  const dateContainer = document.getElementById('time');
+  dateContainer.textContent = '';
+  const date = DateTime.now();
+  dateContainer.append(
+    date.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS),
+  );
+};
+window.setInterval(addDate, 1000);
