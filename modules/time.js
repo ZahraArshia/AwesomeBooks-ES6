@@ -1,13 +1,6 @@
-// eslint-disable-next-line
-import { DateTime } from '../../node_modules/luxon/src/luxon.js';
-
-function addDate() {
-  const dateContainer = document.getElementById('time');
-  dateContainer.textContent = '';
-  const date = DateTime.now();
-  dateContainer.append(
-    date.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS),
-  );
+function addTime() {
+  // eslint-disable-next-line no-undef
+  document.getElementById('time').innerHTML = luxon.DateTime.local().toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS);
 }
 
-export default addDate;
+export default addTime;

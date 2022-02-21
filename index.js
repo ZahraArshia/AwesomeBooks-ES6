@@ -1,7 +1,8 @@
 import Book from './modules/bookOperations.js';
 import * as nav from './modules/nav.js';
-// eslint-disable-next-line
-import { DateTime } from '../../node_modules/luxon/src/luxon.js';
+import addTime from './modules/time.js';
+
+setInterval(addTime, 1000);
 
 document.getElementById('list').addEventListener('click', nav.listShow);
 document.getElementById('addNew').addEventListener('click', nav.addShow);
@@ -15,13 +16,3 @@ document.getElementById('addButton').addEventListener('click', () => {
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
-
-const addDate = () => {
-  const dateContainer = document.getElementById('time');
-  dateContainer.textContent = '';
-  const date = DateTime.now();
-  dateContainer.append(
-    date.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS),
-  );
-};
-window.setInterval(addDate, 1000);
