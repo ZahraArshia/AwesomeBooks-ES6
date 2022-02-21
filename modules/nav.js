@@ -1,7 +1,3 @@
-export {
-  listShow, addShow, contactShow, homePage,
-};
-
 const list = document.getElementById('list');
 const addNew = document.getElementById('addNew');
 const contact = document.getElementById('contact');
@@ -49,3 +45,6 @@ function homePage() {
   addNew.style.color = 'black';
 }
 
+export {
+  listShow, addShow, contactShow, homePage,
+};

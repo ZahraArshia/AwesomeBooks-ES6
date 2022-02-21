@@ -1,4 +1,4 @@
-//eslint-disable-next-line
+// eslint-disable-next-line
 import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 
 function addDate() {

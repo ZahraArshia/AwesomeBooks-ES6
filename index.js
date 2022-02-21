@@ -1,7 +1,6 @@
-
 import Book from './modules/bookOperations.js';
 import * as nav from './modules/nav.js';
-// import addDate from './modules/addDate';
+// eslint-disable-next-line
 import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 
 document.getElementById('list').addEventListener('click', nav.listShow);
